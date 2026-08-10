@@ -2,7 +2,11 @@
   "app": "Dragon Sample App",
   "sources": ["Sources"],
   "strings": ["Sources/**/*.lproj/Localizable.strings"],
-  "pin": { "kind": "path" },
+  "pin": {
+    "file": "Package.swift",
+    "comment": "Anchored on dragon-kit. Was {\"kind\": \"path\"} while this app lived inside the kit — the one R10 exemption, satisfied by construction and therefore unable to catch a stale pin. A real version pin now, like every other Dragon app.",
+    "pattern": "dragon-kit\\.git\", from: \"([0-9.]+)\""
+  },
   "paneOrder": { "file": "Sources/DragonAppTemplate/AppDelegate.swift" },
   "traits": ["sparkle"],
   "exceptions": []

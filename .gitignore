@@ -1,0 +1,12 @@
+# SwiftPM build products and resolved checkouts. This lived in dragon-kit's root .gitignore
+# while the app was a subdirectory, so the extraction left the app with none — and the first
+# `git add -A` here committed 3,571 files and 120 MB of artifacts, including embedded git
+# repositories for Sparkle and dragon-kit.
+.build/
+.swiftpm/
+DerivedData/
+
+# Local debug bundle assembled by scripts/run.sh.
+*.app
+
+.DS_Store

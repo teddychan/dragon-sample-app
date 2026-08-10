@@ -1,0 +1,37 @@
+name: Build
+
+# The app is an executable SwiftPM package with no test target of its own — its job is to exercise
+# every DragonKit module end to end, so "it builds and links against the pinned kit" is the
+# signal. Kept as a separate workflow from conformance so a rules change and a build break are
+# distinguishable in the checks list.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v7
+      - name: Select Xcode
+        run: |
+          set -euo pipefail
+          latest="$(ls -d /Applications/Xcode_*.app 2>/dev/null | sort -V | tail -1)"
+          if [ -n "$latest" ]; then sudo xcode-select -s "$latest/Contents/Developer"; fi
+          swift --version
+      - name: Build (release)
+        run: swift build -c release
+      - name: Assert the bundle version is a numeric candidate
+        run: |
+          set -euo pipefail
+          # MAC-APP-RELEASE-LIFECYCLE.md: CFBundleShortVersionString is the sole source of truth
+          # for the target version and carries only X.Y.Z — never a "Debug" label, never a "v".
+          # The release tag is asserted against this string, so a non-numeric value breaks the
+          # tag gate. Cheap to check here; expensive to discover at tag time.
+          V="$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' Info.plist)"
+          echo "CFBundleShortVersionString = $V"
+          [[ "$V" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || {
+            echo "::error::CFBundleShortVersionString must be numeric X.Y.Z, got '$V'" >&2
+            exit 1
+          }

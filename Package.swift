@@ -6,9 +6,12 @@ let package = Package(
     defaultLocalization: "en",
     platforms: [.macOS("26")],
     dependencies: [
-        // Pin the identity so the product reference (`package: "dragon-kit"`) resolves
-        // regardless of the checkout directory name (e.g. a git worktree).
-        .package(name: "dragon-kit", path: ".."),
+        // A published version pin, like every other Dragon app. This app used to live inside
+        // dragon-kit and depend on it by `path: ".."`, which made it the one app exempt from
+        // CONFORMANCE §R10 ("the DragonKit pin is current") — it satisfied the rule by
+        // construction and so could never catch a stale kit. Now that release ownership is its
+        // own repository, the exemption goes with it: this pin is checked like everyone else's.
+        .package(url: "https://github.com/teddychan/dragon-kit.git", from: "3.3.0"),
     ],
     targets: [
         .executableTarget(

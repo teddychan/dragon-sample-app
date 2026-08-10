@@ -1,0 +1,24 @@
+{
+  "originHash" : "2ef69dc5ae8ee835666fff97d49ee858980171f4982db3364d0fe01a65bb3b48",
+  "pins" : [
+    {
+      "identity" : "dragon-kit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/teddychan/dragon-kit.git",
+      "state" : {
+        "revision" : "9ebd5e50ee72706625aae2c0170f028135631e33",
+        "version" : "3.3.0"
+      }
+    },
+    {
+      "identity" : "sparkle",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sparkle-project/Sparkle",
+      "state" : {
+        "revision" : "79bc9e872948e47877e76f194cb0c8e0412b0b90",
+        "version" : "2.9.5"
+      }
+    }
+  ],
+  "version" : 3
+}
