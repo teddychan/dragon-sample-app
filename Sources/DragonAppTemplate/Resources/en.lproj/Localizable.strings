@@ -10,7 +10,7 @@
 "app.general.playSoundHint" = "A sample app-specific setting — included so Backup & Restore has real data to save.";
 "app.general.languageSection" = "Language";
 "app.whatsNew.summary" = "A maintenance release: no changes to how the app works.";
-"app.whatsNew.changed1" = "Rebuilt on DragonKit 3.3.0, and now released from its own repository.";
+"app.whatsNew.changed1" = "Rebuilt on DragonKit 3.3.0, and now built and released from its own repository.";
 "app.uninstall.item.app" = "The app and its login item";
 "app.uninstall.item.settings" = "All settings";
 "app.uninstall.item.state" = "Saved application state";

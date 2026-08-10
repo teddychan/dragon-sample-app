@@ -10,7 +10,7 @@
 "app.general.playSoundHint" = "Un ajuste de ejemplo específico de la app, incluido para que Copia de seguridad tenga datos reales que guardar.";
 "app.general.languageSection" = "Idioma";
 "app.whatsNew.summary" = "Una versión de mantenimiento: sin cambios en el funcionamiento de la app.";
-"app.whatsNew.changed1" = "Recompilada con DragonKit 3.3.0 y publicada ahora desde su propio repositorio.";
+"app.whatsNew.changed1" = "Recompilada con DragonKit 3.3.0 y ahora compilada y publicada desde su propio repositorio.";
 "app.uninstall.item.app" = "La app y su ítem de inicio de sesión";
 "app.uninstall.item.settings" = "Todos los ajustes";
 "app.uninstall.item.state" = "Estado guardado de la aplicación";

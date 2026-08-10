@@ -38,7 +38,14 @@ jobs:
     uses: teddychan/dragon-release-ci/.github/workflows/release-macos.yml@v6
     secrets: inherit
     with:
-      verify_only: ${{ inputs.verify_only }}
+      # `inputs` only exists for workflow_dispatch. On a TAG PUSH it is absent, so the bare
+      # `${{ inputs.verify_only }}` evaluated to '' and GitHub rejected the whole run with
+      # "evaluate reusable workflow inputs … Unexpected value ''" — 0 jobs, no log, and v1.4.1
+      # spent for nothing. Guard on the event so a push resolves to a literal false.
+      #
+      # Every verification run had gone through workflow_dispatch, so the push path this line
+      # breaks was the one path never exercised before the tag went up.
+      verify_only: ${{ github.event_name == 'workflow_dispatch' && inputs.verify_only || false }}
       build_kind: swiftpm
       swiftpm_runner: macos-26
       swiftpm_working_directory: '.'
