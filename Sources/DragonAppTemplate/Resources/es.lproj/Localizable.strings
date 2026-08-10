@@ -9,10 +9,8 @@
 "app.general.playSound" = "Reproducir sonido al actuar";
 "app.general.playSoundHint" = "Un ajuste de ejemplo específico de la app, incluido para que Copia de seguridad tenga datos reales que guardar.";
 "app.general.languageSection" = "Idioma";
-"app.whatsNew.summary" = "El panel Acerca de ahora es igual que el de las demás apps de Dragon, y al desinstalar, la app limpia bien todo lo que dejaba atrás.";
-"app.whatsNew.changed1" = "Acerca de ahora muestra las mismas filas, y en el mismo orden, que las demás apps de Dragon.";
-"app.whatsNew.changed2" = "Reconstruida sobre DragonKit 3.1.0.";
-"app.whatsNew.fixed1" = "Al desinstalar ahora también se borra el registro de la app en Homebrew, así que después puedes volver a instalarla con Homebrew.";
+"app.whatsNew.summary" = "Una versión de mantenimiento: sin cambios en el funcionamiento de la app.";
+"app.whatsNew.changed1" = "Recompilada con DragonKit 3.3.0 y publicada ahora desde su propio repositorio.";
 "app.uninstall.item.app" = "La app y su ítem de inicio de sesión";
 "app.uninstall.item.settings" = "Todos los ajustes";
 "app.uninstall.item.state" = "Estado guardado de la aplicación";

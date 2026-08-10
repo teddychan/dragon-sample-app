@@ -9,10 +9,8 @@
 "app.general.playSound" = "Play sound on action";
 "app.general.playSoundHint" = "A sample app-specific setting — included so Backup & Restore has real data to save.";
 "app.general.languageSection" = "Language";
-"app.whatsNew.summary" = "The About pane now matches every other Dragon app, and uninstalling cleans up after itself properly.";
-"app.whatsNew.changed1" = "About now shows the same rows, in the same order, as every other Dragon app.";
-"app.whatsNew.changed2" = "Rebuilt on DragonKit 3.1.0.";
-"app.whatsNew.fixed1" = "Uninstalling now also clears the app's Homebrew record, so installing it again with Homebrew works afterwards.";
+"app.whatsNew.summary" = "A maintenance release: no changes to how the app works.";
+"app.whatsNew.changed1" = "Rebuilt on DragonKit 3.3.0, and now released from its own repository.";
 "app.uninstall.item.app" = "The app and its login item";
 "app.uninstall.item.settings" = "All settings";
 "app.uninstall.item.state" = "Saved application state";

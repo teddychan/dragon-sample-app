@@ -9,12 +9,9 @@ name: Release
 # or `whats_new_path`, so passing them there would fail at startup — the pin and the inputs move
 # together or not at all.
 #
-# Dispatch-only, with verify_only defaulted true: this app is the first adopter, ahead of the four
-# production apps, and its job is to prove the pipeline resolves and refuses to publish. The tag
-# trigger stays commented out until the CFBundleVersion continuity question is settled — a release
-# built here would carry build 11 against the 77 already shipped from dragon-kit, and Sparkle
-# compares that number to decide whether an update is newer, so the first tag from this repo would
-# look OLDER than what users have installed.
+# The tag trigger is live: `build_number_offset` below settles the CFBundleVersion continuity
+# problem that blocked it. A dispatch still runs verification-only by default, which is how this
+# app exercises the pipeline without publishing.
 on:
   workflow_dispatch:
     inputs:
@@ -22,8 +19,8 @@ on:
         description: 'Run the gate and build, publish nothing'
         type: boolean
         default: true
-  # push:
-  #   tags: ['v[0-9]+.[0-9]+.[0-9]+']
+  push:
+    tags: ['v[0-9]+.[0-9]+.[0-9]+']
 
 # The called workflow declares `permissions: contents: write` — it creates the GitHub Release and
 # uploads the asset on THIS repo. A new GitHub repository defaults workflow permissions to
@@ -53,5 +50,11 @@ jobs:
       bot_name: 'Dragon Sample App Release Bot'
       assert_tag_matches_plist: true
       whats_new_path: Sources/DragonAppTemplate/WhatsNewConfig.swift
+      # CFBundleVersion must clear the 77 already shipped from dragon-kit. Sparkle compares this
+      # number (the appcast's sparkle:version), and `git rev-list --count HEAD` restarted at 1
+      # when this app was extracted — so without the offset, v1.4.1 would advertise build 12 and
+      # every installed copy would read it as OLDER and never offer the update. 100 + count clears
+      # 77 with room to spare. Never lower this.
+      build_number_offset: '100'
       appcast_repo: teddychan/dragon-sample-app
       zip_name_template: 'DragonSampleApp-{TAG}.zip'

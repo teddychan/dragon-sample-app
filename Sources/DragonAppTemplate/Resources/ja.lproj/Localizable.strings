@@ -9,10 +9,8 @@
 "app.general.playSound" = "操作時にサウンドを再生";
 "app.general.playSoundHint" = "アプリ独自のサンプル設定です。バックアップと復元に保存する実データを用意するために含まれています。";
 "app.general.languageSection" = "言語";
-"app.whatsNew.summary" = "「情報」パネルがほかのDragonアプリと同じ内容になり、アンインストール時の後片付けも正しく行われるようになりました。";
-"app.whatsNew.changed1" = "「情報」に、ほかのすべてのDragonアプリとまったく同じ項目が、同じ順序で表示されるようになりました。";
-"app.whatsNew.changed2" = "アプリをDragonKit 3.1.0で再ビルドしました。";
-"app.whatsNew.fixed1" = "アンインストール時にアプリのHomebrewの記録も削除するようになったため、あとからHomebrewで再インストールできます。";
+"app.whatsNew.summary" = "メンテナンスリリースです。動作に変更はありません。";
+"app.whatsNew.changed1" = "DragonKit 3.3.0 で再ビルドし、専用のリポジトリから公開するようになりました。";
 "app.uninstall.item.app" = "アプリとそのログイン項目";
 "app.uninstall.item.settings" = "すべての設定";
 "app.uninstall.item.state" = "保存されたアプリケーションの状態";

@@ -33,7 +33,11 @@ PB=/usr/libexec/PlistBuddy
 
 # Build number = git commit count (monotonic) so About shows a real per-build number
 # instead of the placeholder "1".
-BUILD="$(git rev-list --count HEAD 2>/dev/null || echo 1)"
+# +100 to match the release CI's build_number_offset: this repo's commit count restarted at 1
+# on extraction, and CFBundleVersion must stay above the 77 already shipped from dragon-kit.
+# Keeping the local and released schemes identical means a Debug build number is comparable to a
+# release one, which is the whole point of showing it in About.
+BUILD="$(( $(git rev-list --count HEAD 2>/dev/null || echo 1) + 100 ))"
 "$PB" -c "Set :CFBundleVersion $BUILD" "$APP/Contents/Info.plist" 2>/dev/null \
   || "$PB" -c "Add :CFBundleVersion string $BUILD" "$APP/Contents/Info.plist"
 
