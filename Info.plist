@@ -35,7 +35,7 @@
 	<key>SUEnableAutomaticChecks</key>
 	<false/>
 	<key>SUFeedURL</key>
-	<string>https://raw.githubusercontent.com/teddychan/dragon-kit/main/docs/dragon-sample-app/appcast.xml</string>
+	<string>https://raw.githubusercontent.com/teddychan/dragon-sample-app/main/docs/dragon-sample-app/appcast.xml</string>
 	<key>SUPublicEDKey</key>
 	<string>p+F/ivF5bAYcmuNuCMNHcRv123A6LHFpCBagFm7Adu8=</string>
 </dict>
