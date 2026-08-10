@@ -1,0 +1,42 @@
+name: Release
+
+# Public releases of Dragon Sample App. Exactly `vX.Y.Z` tags — no prefixed family. This app used
+# to publish from dragon-kit under `sample-v*`, which meant one repository owned two independently
+# versioned public series; MAC-APP-RELEASE-LIFECYCLE.md now forbids that, and the tag gate rejects
+# every prefixed form outright. Historical `sample-v*` tags in dragon-kit are migration data only.
+#
+# Currently pinned at the branch, NOT @v6, and dispatch-only with verify_only defaulted true:
+# this app is the first adopter of the hardened gate, and its job is to prove the pipeline
+# resolves and refuses to publish before four production apps are repointed at it. The tag
+# trigger stays commented out until the CFBundleVersion continuity question is settled — a
+# release built here would carry build 11 against the 77 already shipped from dragon-kit, and
+# Sparkle compares that number to decide whether an update is newer.
+on:
+  workflow_dispatch:
+    inputs:
+      verify_only:
+        description: 'Run the gate and build, publish nothing'
+        type: boolean
+        default: true
+  # push:
+  #   tags: ['v[0-9]+.[0-9]+.[0-9]+']
+
+jobs:
+  release:
+    uses: teddychan/dragon-release-ci/.github/workflows/release-macos.yml@codex/tag-gate
+    secrets: inherit
+    with:
+      verify_only: ${{ inputs.verify_only }}
+      build_kind: swiftpm
+      swiftpm_runner: macos-26
+      swiftpm_working_directory: '.'
+      swiftpm_product_name: DragonAppTemplate
+      swiftpm_app_name_template: 'Dragon Sample App'
+      swiftpm_sparkle: true
+      app_slug: dragon-sample-app
+      release_title_prefix: 'Dragon Sample App'
+      bot_name: 'Dragon Sample App Release Bot'
+      assert_tag_matches_plist: true
+      whats_new_path: Sources/DragonAppTemplate/WhatsNewConfig.swift
+      appcast_repo: teddychan/dragon-sample-app
+      zip_name_template: 'DragonSampleApp-{TAG}.zip'
