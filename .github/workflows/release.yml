@@ -26,7 +26,7 @@ jobs:
     uses: teddychan/dragon-release-ci/.github/workflows/release-macos.yml@codex/tag-gate
     secrets: inherit
     with:
-      verify_only: ${{ inputs.verify_only }}
+      verify_only: true
       build_kind: swiftpm
       swiftpm_runner: macos-26
       swiftpm_working_directory: '.'
