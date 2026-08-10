@@ -5,12 +5,16 @@ name: Release
 # versioned public series; MAC-APP-RELEASE-LIFECYCLE.md now forbids that, and the tag gate rejects
 # every prefixed form outright. Historical `sample-v*` tags in dragon-kit are migration data only.
 #
-# Currently pinned at the branch, NOT @v6, and dispatch-only with verify_only defaulted true:
-# this app is the first adopter of the hardened gate, and its job is to prove the pipeline
-# resolves and refuses to publish before four production apps are repointed at it. The tag
-# trigger stays commented out until the CFBundleVersion continuity question is settled — a
-# release built here would carry build 11 against the 77 already shipped from dragon-kit, and
-# Sparkle compares that number to decide whether an update is newer.
+# Pinned @v6, the first release of the mandatory tag gate. v5 is frozen and has no `verify_only`
+# or `whats_new_path`, so passing them there would fail at startup — the pin and the inputs move
+# together or not at all.
+#
+# Dispatch-only, with verify_only defaulted true: this app is the first adopter, ahead of the four
+# production apps, and its job is to prove the pipeline resolves and refuses to publish. The tag
+# trigger stays commented out until the CFBundleVersion continuity question is settled — a release
+# built here would carry build 11 against the 77 already shipped from dragon-kit, and Sparkle
+# compares that number to decide whether an update is newer, so the first tag from this repo would
+# look OLDER than what users have installed.
 on:
   workflow_dispatch:
     inputs:
@@ -34,7 +38,7 @@ permissions:
 
 jobs:
   release:
-    uses: teddychan/dragon-release-ci/.github/workflows/release-macos.yml@codex/tag-gate
+    uses: teddychan/dragon-release-ci/.github/workflows/release-macos.yml@v6
     secrets: inherit
     with:
       verify_only: ${{ inputs.verify_only }}
