@@ -56,7 +56,19 @@ jobs:
       release_title_prefix: 'Dragon Sample App'
       bot_name: 'Dragon Sample App Release Bot'
       assert_tag_matches_plist: true
-      whats_new_path: Sources/DragonAppTemplate/WhatsNewConfig.swift
+      # The config file FIRST (the version and sections checks read it), then every translation.
+      # The entries here are L() keys, so the text a user actually reads lives in these .strings —
+      # watching only the .swift meant a full rewrite could pass unnoticed, and blocked 1.4.2 where
+      # the rewrite was real but .strings-only. Needs dragon-release-ci >= v6.2.0.
+      whats_new_path: >-
+        Sources/DragonAppTemplate/WhatsNewConfig.swift
+        Sources/DragonAppTemplate/Resources/en.lproj/Localizable.strings
+        Sources/DragonAppTemplate/Resources/es.lproj/Localizable.strings
+        Sources/DragonAppTemplate/Resources/fr.lproj/Localizable.strings
+        Sources/DragonAppTemplate/Resources/ja.lproj/Localizable.strings
+        Sources/DragonAppTemplate/Resources/ko.lproj/Localizable.strings
+        Sources/DragonAppTemplate/Resources/zh-Hans.lproj/Localizable.strings
+        Sources/DragonAppTemplate/Resources/zh-Hant.lproj/Localizable.strings
       # CFBundleVersion must clear the 77 already shipped from dragon-kit. Sparkle compares this
       # number (the appcast's sparkle:version), and `git rev-list --count HEAD` restarted at 1
       # when this app was extracted — so without the offset, v1.4.1 would advertise build 12 and
