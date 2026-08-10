@@ -21,12 +21,23 @@ on:
   # push:
   #   tags: ['v[0-9]+.[0-9]+.[0-9]+']
 
+# The called workflow declares `permissions: contents: write` — it creates the GitHub Release and
+# uploads the asset on THIS repo. A new GitHub repository defaults workflow permissions to
+# `contents: read`, so without this block the run dies as `startup_failure` in two seconds with
+# "The workflow is requesting 'contents: write', but is only allowed 'contents: read'". Every
+# other Dragon caller declares it the same way; the four production repos also default to `read`.
+#
+# A verification-only run still writes nothing: every side-effecting step carries its own
+# verify_only guard and receives an empty credential, so the grant is unused rather than relied on.
+permissions:
+  contents: write
+
 jobs:
   release:
     uses: teddychan/dragon-release-ci/.github/workflows/release-macos.yml@codex/tag-gate
     secrets: inherit
     with:
-      verify_only: true
+      verify_only: ${{ inputs.verify_only }}
       build_kind: swiftpm
       swiftpm_runner: macos-26
       swiftpm_working_directory: '.'
