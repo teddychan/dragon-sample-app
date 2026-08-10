@@ -19,6 +19,10 @@ on:
         description: 'Run the gate and build, publish nothing'
         type: boolean
         default: true
+      release_tag:
+        description: 'Optional: an EXISTING exact vX.Y.Z tag to build. The job checks out that commit rather than the branch head. Leave empty to build this branch.'
+        type: string
+        default: ''
   push:
     tags: ['v[0-9]+.[0-9]+.[0-9]+']
 
@@ -46,6 +50,7 @@ jobs:
       # Every verification run had gone through workflow_dispatch, so the push path this line
       # breaks was the one path never exercised before the tag went up.
       verify_only: ${{ github.event_name == 'workflow_dispatch' && inputs.verify_only || false }}
+      release_tag: ${{ github.event_name == 'workflow_dispatch' && inputs.release_tag || '' }}
       build_kind: swiftpm
       swiftpm_runner: macos-26
       swiftpm_working_directory: '.'
