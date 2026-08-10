@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Dragon Sample App</title>
+        <item>
+            <title>1.4.2</title>
+            <pubDate>Mon, 10 Aug 2026 14:51:21 +0000</pubDate>
+            <sparkle:version>121</sparkle:version>
+            <sparkle:shortVersionString>1.4.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/teddychan/dragon-sample-app/releases/download/v1.4.2/DragonSampleApp-v1.4.2.zip" length="1423585" type="application/octet-stream" sparkle:edSignature="rg2b1kU3yW4VVZfCOgghDpDIN8x2IswP1qY/EUpNgUVR1WUuzIRZf2Uu3mMLsTDgaxIHoouLxEh16afFcfb9Ag=="/>
+        </item>
+    </channel>
+</rss>
