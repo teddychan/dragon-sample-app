@@ -25,8 +25,9 @@ enum WhatsNewConfig {
             date: "2026-08-11",
             summary: L("app.whatsNew.summary"),
             sections: [
-                ChangeSection(kind: .changed, entries: [
-                    L("app.whatsNew.changed1"),
+                ChangeSection(kind: .fixed, entries: [
+                    L("app.whatsNew.fixed1"),
+                    L("app.whatsNew.fixed2"),
                 ]),
             ]
         )
