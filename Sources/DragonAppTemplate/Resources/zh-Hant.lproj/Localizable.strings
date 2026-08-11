@@ -10,7 +10,7 @@
 "app.general.playSoundHint" = "一個 App 專屬的範例設定——包含它是為了讓備份與還原有真實資料可儲存。";
 "app.general.languageSection" = "語言";
 "app.whatsNew.summary" = "這是一個維護版本：應用程式的使用方式沒有變化。";
-"app.whatsNew.changed1" = "已基於 DragonKit 3.3.0 重新建置，現由獨立的程式碼儲存庫負責建置與發布。";
+"app.whatsNew.changed1" = "已基於 DragonKit 3.4.0 重新建置——這就是「關於」的「建構於」一行現在顯示的版本。";
 "app.uninstall.item.app" = "App 及其登入項目";
 "app.uninstall.item.settings" = "所有設定";
 "app.uninstall.item.state" = "已儲存的 App 狀態";
