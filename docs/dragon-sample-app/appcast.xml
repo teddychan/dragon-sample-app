@@ -3,13 +3,13 @@
     <channel>
         <title>Dragon Sample App</title>
         <item>
-            <title>1.4.3</title>
-            <pubDate>Tue, 11 Aug 2026 08:04:08 +0000</pubDate>
-            <sparkle:version>125</sparkle:version>
-            <sparkle:shortVersionString>1.4.3</sparkle:shortVersionString>
+            <title>1.4.4</title>
+            <pubDate>Tue, 11 Aug 2026 09:18:25 +0000</pubDate>
+            <sparkle:version>127</sparkle:version>
+            <sparkle:shortVersionString>1.4.4</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/teddychan/dragon-sample-app/releases/download/v1.4.3/DragonSampleApp-v1.4.3.zip" length="1424699" type="application/octet-stream" sparkle:edSignature="iezwJr/3OVgxpmAWE/nv8PATbTutTKNVt6LaahYeFWwZYXHYafzXvUBM2a6rBwlGAbqeKE755gNC/2FFtSefCw=="/>
+            <enclosure url="https://github.com/teddychan/dragon-sample-app/releases/download/v1.4.4/DragonSampleApp-v1.4.4.zip" length="1425956" type="application/octet-stream" sparkle:edSignature="X84nzjvV4y3eUj6BaV1d8DbZCxeJrrEUpK/vCWP3mjppmN+MC+8XUVhp3+Fta7TB3KRDryw2g+UXJ0bRq4dOCQ=="/>
         </item>
     </channel>
 </rss>
