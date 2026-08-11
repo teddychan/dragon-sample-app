@@ -9,8 +9,9 @@
 "app.general.playSound" = "操作時播放聲音";
 "app.general.playSoundHint" = "一個 App 專屬的範例設定——包含它是為了讓備份與還原有真實資料可儲存。";
 "app.general.languageSection" = "語言";
-"app.whatsNew.summary" = "這是一個維護版本：應用程式的使用方式沒有變化。";
-"app.whatsNew.changed1" = "已基於 DragonKit 3.4.0 重新建置——這就是「關於」的「建構於」一行現在顯示的版本。";
+"app.whatsNew.summary" = "這是一個問題修復版本：「關於」中的兩個連結現在會指向正確的位置。";
+"app.whatsNew.fixed1" = "「關於」新增了「開源授權」連結，應用程式所隨附元件（包括 Sparkle）的授權聲明現在可以查看了。";
+"app.whatsNew.fixed2" = "「在 GitHub 上取得支援」現在會開啟本應用程式自己的問題追蹤頁面，而不是 DragonKit 程式庫的。";
 "app.uninstall.item.app" = "App 及其登入項目";
 "app.uninstall.item.settings" = "所有設定";
 "app.uninstall.item.state" = "已儲存的 App 狀態";

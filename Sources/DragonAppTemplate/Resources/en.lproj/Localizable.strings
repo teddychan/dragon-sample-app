@@ -9,8 +9,9 @@
 "app.general.playSound" = "Play sound on action";
 "app.general.playSoundHint" = "A sample app-specific setting — included so Backup & Restore has real data to save.";
 "app.general.languageSection" = "Language";
-"app.whatsNew.summary" = "A maintenance release: no changes to how the app works.";
-"app.whatsNew.changed1" = "Rebuilt on DragonKit 3.4.0 — the version About now reports under Built with.";
+"app.whatsNew.summary" = "A bug-fix release: two links in the About pane now go where they should.";
+"app.whatsNew.fixed1" = "About now shows an Open-source licenses link, so the notices for the components the app bundles — including Sparkle — are reachable instead of missing.";
+"app.whatsNew.fixed2" = "Support on GitHub now opens this app's own issue tracker, not the DragonKit library's.";
 "app.uninstall.item.app" = "The app and its login item";
 "app.uninstall.item.settings" = "All settings";
 "app.uninstall.item.state" = "Saved application state";
