@@ -22,7 +22,7 @@ enum WhatsNewConfig {
     @MainActor
     static var content: WhatsNewContent {
         WhatsNewContent(
-            date: "2026-08-10",
+            date: "2026-08-11",
             summary: L("app.whatsNew.summary"),
             sections: [
                 ChangeSection(kind: .changed, entries: [

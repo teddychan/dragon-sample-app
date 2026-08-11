@@ -10,7 +10,7 @@
 "app.general.playSoundHint" = "アプリ独自のサンプル設定です。バックアップと復元に保存する実データを用意するために含まれています。";
 "app.general.languageSection" = "言語";
 "app.whatsNew.summary" = "メンテナンスリリースです。動作に変更はありません。";
-"app.whatsNew.changed1" = "DragonKit 3.3.0 で再ビルドし、専用のリポジトリでビルドおよび公開するようになりました。";
+"app.whatsNew.changed1" = "DragonKit 3.4.0 で再ビルドしました。「情報」の「使用技術」に表示されるバージョンです。";
 "app.uninstall.item.app" = "アプリとそのログイン項目";
 "app.uninstall.item.settings" = "すべての設定";
 "app.uninstall.item.state" = "保存されたアプリケーションの状態";
