@@ -9,9 +9,8 @@
 "app.general.playSound" = "操作时播放声音";
 "app.general.playSoundHint" = "一个应用专属的示例设置——包含它是为了让备份与恢复有真实数据可保存。";
 "app.general.languageSection" = "语言";
-"app.whatsNew.summary" = "这是一个问题修复版本：「关于」中的两个链接现在会指向正确的位置。";
-"app.whatsNew.fixed1" = "「关于」新增了「开源许可证」链接，应用所捆绑组件（包括 Sparkle）的许可声明现在可以查看了。";
-"app.whatsNew.fixed2" = "「在 GitHub 上获取支持」现在会打开本应用自己的问题追踪页面，而不是 DragonKit 库的。";
+"app.whatsNew.summary" = "一个小修复：应用现在带有版权声明，与「关于」中显示的一致。";
+"app.whatsNew.fixed1" = "访达的「显示简介」现在会显示 Dragon Sample App 的版权声明，此前是缺失的。";
 "app.uninstall.item.app" = "应用及其登录项";
 "app.uninstall.item.settings" = "所有设置";
 "app.uninstall.item.state" = "已保存的应用状态";

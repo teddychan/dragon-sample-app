@@ -9,9 +9,8 @@
 "app.general.playSound" = "Émettre un son lors d’une action";
 "app.general.playSoundHint" = "Un réglage d’exemple propre à l’app, inclus pour que Sauvegarde ait de vraies données à enregistrer.";
 "app.general.languageSection" = "Langue";
-"app.whatsNew.summary" = "Une version corrective : deux liens d’À propos mènent désormais au bon endroit.";
-"app.whatsNew.fixed1" = "À propos affiche désormais un lien « Licences open source », de sorte que les mentions des composants intégrés à l’app — dont Sparkle — sont enfin accessibles.";
-"app.whatsNew.fixed2" = "« Assistance sur GitHub » ouvre désormais le suivi des tickets de cette app, et non celui de la bibliothèque DragonKit.";
+"app.whatsNew.summary" = "Une petite correction : l’app comporte désormais une mention de copyright, la même que celle affichée dans À propos.";
+"app.whatsNew.fixed1" = "La fenêtre « Lire les informations » du Finder affiche désormais la mention de copyright de Dragon Sample App, jusque-là absente.";
 "app.uninstall.item.app" = "L’app et son élément d’ouverture";
 "app.uninstall.item.settings" = "Tous les réglages";
 "app.uninstall.item.state" = "État enregistré de l’app";

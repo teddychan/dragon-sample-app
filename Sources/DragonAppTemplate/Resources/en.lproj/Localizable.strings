@@ -9,9 +9,8 @@
 "app.general.playSound" = "Play sound on action";
 "app.general.playSoundHint" = "A sample app-specific setting — included so Backup & Restore has real data to save.";
 "app.general.languageSection" = "Language";
-"app.whatsNew.summary" = "A bug-fix release: two links in the About pane now go where they should.";
-"app.whatsNew.fixed1" = "About now shows an Open-source licenses link, so the notices for the components the app bundles — including Sparkle — are reachable instead of missing.";
-"app.whatsNew.fixed2" = "Support on GitHub now opens this app's own issue tracker, not the DragonKit library's.";
+"app.whatsNew.summary" = "A small fix: the app now carries a copyright notice, the same one shown in About.";
+"app.whatsNew.fixed1" = "Finder's Get Info panel now shows Dragon Sample App's copyright notice, which was missing.";
 "app.uninstall.item.app" = "The app and its login item";
 "app.uninstall.item.settings" = "All settings";
 "app.uninstall.item.state" = "Saved application state";

@@ -25,9 +25,12 @@ enum WhatsNewConfig {
             date: "2026-08-11",
             summary: L("app.whatsNew.summary"),
             sections: [
+                // One entry: 1.4.5 adds the bundle's copyright notice and nothing else.
+                // `app.whatsNew.fixed2` is gone from the seven .strings files rather than left
+                // behind holding 1.4.4's second claim — an orphan key would resurface the moment
+                // someone re-added a second entry without rewriting it.
                 ChangeSection(kind: .fixed, entries: [
                     L("app.whatsNew.fixed1"),
-                    L("app.whatsNew.fixed2"),
                 ]),
             ]
         )
