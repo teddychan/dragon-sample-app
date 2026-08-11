@@ -9,9 +9,8 @@
 "app.general.playSound" = "操作時にサウンドを再生";
 "app.general.playSoundHint" = "アプリ独自のサンプル設定です。バックアップと復元に保存する実データを用意するために含まれています。";
 "app.general.languageSection" = "言語";
-"app.whatsNew.summary" = "不具合修正リリースです。「情報」の 2 つのリンクが正しい場所を開くようになりました。";
-"app.whatsNew.fixed1" = "「情報」に「オープンソースライセンス」のリンクを追加しました。Sparkle など、アプリに同梱しているコンポーネントのライセンス表記を参照できます。";
-"app.whatsNew.fixed2" = "「GitHub でサポート」が、DragonKit ライブラリではなくこのアプリ自身の課題トラッカーを開くようになりました。";
+"app.whatsNew.summary" = "小さな修正です。アプリに著作権表示が追加され、「情報」に表示されるものと同じになりました。";
+"app.whatsNew.fixed1" = "Finder の「情報を見る」に、これまで無かった Dragon Sample App の著作権表示が表示されるようになりました。";
 "app.uninstall.item.app" = "アプリとそのログイン項目";
 "app.uninstall.item.settings" = "すべての設定";
 "app.uninstall.item.state" = "保存されたアプリケーションの状態";

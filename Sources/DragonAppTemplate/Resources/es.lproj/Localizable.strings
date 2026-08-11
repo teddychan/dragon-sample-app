@@ -9,9 +9,8 @@
 "app.general.playSound" = "Reproducir sonido al actuar";
 "app.general.playSoundHint" = "Un ajuste de ejemplo específico de la app, incluido para que Copia de seguridad tenga datos reales que guardar.";
 "app.general.languageSection" = "Idioma";
-"app.whatsNew.summary" = "Una versión de corrección de errores: dos enlaces de «Acerca de» ahora llevan a donde deben.";
-"app.whatsNew.fixed1" = "«Acerca de» ahora muestra un enlace «Licencias de código abierto», así que los avisos de los componentes que incluye la app —entre ellos Sparkle— ya se pueden consultar.";
-"app.whatsNew.fixed2" = "«Soporte en GitHub» ahora abre el gestor de incidencias de esta app, no el de la biblioteca DragonKit.";
+"app.whatsNew.summary" = "Una pequeña corrección: la app ahora incluye un aviso de copyright, el mismo que muestra «Acerca de».";
+"app.whatsNew.fixed1" = "El panel «Obtener información» del Finder ahora muestra el aviso de copyright de Dragon Sample App, que faltaba.";
 "app.uninstall.item.app" = "La app y su ítem de inicio de sesión";
 "app.uninstall.item.settings" = "Todos los ajustes";
 "app.uninstall.item.state" = "Estado guardado de la aplicación";
