@@ -9,5 +9,12 @@
   },
   "paneOrder": { "file": "Sources/DragonAppTemplate/AppDelegate.swift" },
   "traits": ["sparkle"],
-  "exceptions": []
+  "exceptions": [
+    {
+      "rule": "R15",
+      "path": "Sources/DragonAppTemplate/AboutConfig.swift",
+      "reason": "no public app page exists; the site hosts only /dragon-sample-app/licenses/",
+      "sanctionedBy": "CONFORMANCE.md §R11"
+    }
+  ]
 }
