@@ -13,6 +13,14 @@ DEBUG_ID="com.dragonapp.dragon-sample-app.debug"
 # rebuilds. Without it we fall back to ad-hoc, which re-prompts each build.
 SIGN_IDENTITY="Dragon Sample App Debug"
 
+# Where the bundle inputs are READ from — Info.plist here, plus the icon and entitlements in an
+# app that ships them. DragonKit CONFORMANCE §R16 fixes that directory at `App/` for every Dragon
+# app whatever builds it, so it is NOT the directory holding Package.swift. No incident forced
+# this one: five apps had picked four places, each internally consistent, and the cost was paid by
+# everything that reads across the fleet — this script (the template the app repos copy), the
+# release workflow's `swiftpm_bundle_inputs_directory`, and every new-app scaffold.
+BUNDLE_INPUTS="App"
+
 swift build -c debug
 BIN_DIR="$(swift build -c debug --show-bin-path)"
 
@@ -20,7 +28,7 @@ APP="$BIN_DIR/$APP_NAME.app"
 rm -rf "$APP"
 mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources" "$APP/Contents/Frameworks"
 cp "$BIN_DIR/$BIN_NAME" "$APP/Contents/MacOS/$BIN_NAME"
-cp Info.plist "$APP/Contents/Info.plist"
+cp "$BUNDLE_INPUTS/Info.plist" "$APP/Contents/Info.plist"
 
 # Re-id the main bundle to the .debug identity so it runs safely beside an installed release.
 PB=/usr/libexec/PlistBuddy

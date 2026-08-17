@@ -54,6 +54,14 @@ jobs:
       build_kind: swiftpm
       swiftpm_runner: macos-26
       swiftpm_working_directory: '.'
+      # Package.swift stays at the repo root; the bundle inputs no longer sit beside it. DragonKit
+      # CONFORMANCE §R16 puts Info.plist (and the icon and entitlements, in an app that ships them)
+      # in `App/`, so the assembly step has to be told the second directory — it used to read them
+      # from the working directory, which silently required every repo to keep the two together.
+      # Needs dragon-release-ci >= v6.5.0; on an older pin the input is rejected at startup, and
+      # without it the step finds no Info.plist and fails the release rather than shipping a
+      # bundle with no identity.
+      swiftpm_bundle_inputs_directory: App
       swiftpm_product_name: DragonAppTemplate
       swiftpm_app_name_template: 'Dragon Sample App'
       swiftpm_sparkle: true
