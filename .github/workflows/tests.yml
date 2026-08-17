@@ -29,7 +29,9 @@ jobs:
           # for the target version and carries only X.Y.Z — never a "Debug" label, never a "v".
           # The release tag is asserted against this string, so a non-numeric value breaks the
           # tag gate. Cheap to check here; expensive to discover at tag time.
-          V="$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' Info.plist)"
+          # The plist is read from App/, where DragonKit CONFORMANCE §R16 puts every Dragon app's
+          # bundle inputs — not from the package root, which is where it lived until that rule.
+          V="$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' App/Info.plist)"
           echo "CFBundleShortVersionString = $V"
           [[ "$V" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || {
             echo "::error::CFBundleShortVersionString must be numeric X.Y.Z, got '$V'" >&2
