@@ -9,8 +9,8 @@
 "app.general.playSound" = "操作時にサウンドを再生";
 "app.general.playSoundHint" = "アプリ独自のサンプル設定です。バックアップと復元に保存する実データを用意するために含まれています。";
 "app.general.languageSection" = "言語";
-"app.whatsNew.summary" = "小さな修正です。アプリに著作権表示が追加され、「情報」に表示されるものと同じになりました。";
-"app.whatsNew.fixed1" = "Finder の「情報を見る」に、これまで無かった Dragon Sample App の著作権表示が表示されるようになりました。";
+"app.whatsNew.summary" = "メンテナンスのみ：Dragon Sample App は DragonKit 4.1.0 でビルドされるようになりました。";
+"app.whatsNew.changed1" = "DragonKit の必要バージョンを、現在の公開タグである 4.1.0 に引き上げました。";
 "app.uninstall.item.app" = "アプリとそのログイン項目";
 "app.uninstall.item.settings" = "すべての設定";
 "app.uninstall.item.state" = "保存されたアプリケーションの状態";

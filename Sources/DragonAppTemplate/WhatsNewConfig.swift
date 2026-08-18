@@ -22,15 +22,16 @@ enum WhatsNewConfig {
     @MainActor
     static var content: WhatsNewContent {
         WhatsNewContent(
-            date: "2026-08-11",
+            date: "2026-08-18",
             summary: L("app.whatsNew.summary"),
             sections: [
-                // One entry: 1.4.5 adds the bundle's copyright notice and nothing else.
-                // `app.whatsNew.fixed2` is gone from the seven .strings files rather than left
-                // behind holding 1.4.4's second claim — an orphan key would resurface the moment
-                // someone re-added a second entry without rewriting it.
-                ChangeSection(kind: .fixed, entries: [
-                    L("app.whatsNew.fixed1"),
+                // One entry, and `.changed` rather than `.fixed`: 1.4.6 raises the DragonKit floor
+                // and nothing in the app's own behaviour changed. `app.whatsNew.fixed1` is renamed
+                // to `changed1` in the seven .strings files rather than reused under a heading it
+                // contradicts — a key whose name disagrees with its section is the same second
+                // source of truth this file's header argues against.
+                ChangeSection(kind: .changed, entries: [
+                    L("app.whatsNew.changed1"),
                 ]),
             ]
         )

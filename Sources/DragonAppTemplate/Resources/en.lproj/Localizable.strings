@@ -9,8 +9,8 @@
 "app.general.playSound" = "Play sound on action";
 "app.general.playSoundHint" = "A sample app-specific setting — included so Backup & Restore has real data to save.";
 "app.general.languageSection" = "Language";
-"app.whatsNew.summary" = "A small fix: the app now carries a copyright notice, the same one shown in About.";
-"app.whatsNew.fixed1" = "Finder's Get Info panel now shows Dragon Sample App's copyright notice, which was missing.";
+"app.whatsNew.summary" = "Maintenance only: Dragon Sample App now builds against DragonKit 4.1.0.";
+"app.whatsNew.changed1" = "Raised the DragonKit requirement to 4.1.0, the current released tag.";
 "app.uninstall.item.app" = "The app and its login item";
 "app.uninstall.item.settings" = "All settings";
 "app.uninstall.item.state" = "Saved application state";
