@@ -36,6 +36,7 @@ on:
 # verify_only guard and receives an empty credential, so the grant is unused rather than relied on.
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   release:
