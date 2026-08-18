@@ -25,11 +25,15 @@ enum WhatsNewConfig {
             date: "2026-08-18",
             summary: L("app.whatsNew.summary"),
             sections: [
-                // One entry, and `.changed` rather than `.fixed`: 1.4.6 raises the DragonKit floor
-                // and nothing in the app's own behaviour changed. `app.whatsNew.fixed1` is renamed
-                // to `changed1` in the seven .strings files rather than reused under a heading it
-                // contradicts — a key whose name disagrees with its section is the same second
-                // source of truth this file's header argues against.
+                // 1.4.8 changes nothing in the app: the only commit since 1.4.6 is 1.4.6's own
+                // appcast. It exists to exercise the release path end to end — the appcast and
+                // Homebrew cask now land through auto-merged PRs, `main` is branch-protected in all
+                // nine repos, and no step needs a hand-typed command. 1.4.7 was prepared and never
+                // released, so the number is skipped rather than reused: a version that reached a
+                // branch is cheaper to abandon than to make mean two different trees.
+                //
+                // The notes say precisely that instead of inventing a user-facing change to satisfy
+                // the gate — the gate requires the notes to MOVE, not to be interesting.
                 ChangeSection(kind: .changed, entries: [
                     L("app.whatsNew.changed1"),
                 ]),

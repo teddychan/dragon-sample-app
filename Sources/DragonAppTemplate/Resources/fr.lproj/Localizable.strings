@@ -9,8 +9,8 @@
 "app.general.playSound" = "Émettre un son lors d’une action";
 "app.general.playSoundHint" = "Un réglage d’exemple propre à l’app, inclus pour que Sauvegarde ait de vraies données à enregistrer.";
 "app.general.languageSection" = "Langue";
-"app.whatsNew.summary" = "Maintenance uniquement : Dragon Sample App s'appuie désormais sur DragonKit 4.1.0.";
-"app.whatsNew.changed1" = "La version minimale de DragonKit passe à 4.1.0, la version publiée actuelle.";
+"app.whatsNew.summary" = "Aucun changement dans l'app — cette version valide le pipeline de publication complet.";
+"app.whatsNew.changed1" = "Les versions se déroulent désormais entièrement via des pull requests : préparées, fusionnées, étiquetées et publiées sans écrire directement dans une branche.";
 "app.uninstall.item.app" = "L’app et son élément d’ouverture";
 "app.uninstall.item.settings" = "Tous les réglages";
 "app.uninstall.item.state" = "État enregistré de l’app";
