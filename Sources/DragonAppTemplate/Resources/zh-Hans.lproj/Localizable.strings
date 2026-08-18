@@ -9,8 +9,8 @@
 "app.general.playSound" = "操作时播放声音";
 "app.general.playSoundHint" = "一个应用专属的示例设置——包含它是为了让备份与恢复有真实数据可保存。";
 "app.general.languageSection" = "语言";
-"app.whatsNew.summary" = "一个小修复：应用现在带有版权声明，与「关于」中显示的一致。";
-"app.whatsNew.fixed1" = "访达的「显示简介」现在会显示 Dragon Sample App 的版权声明，此前是缺失的。";
+"app.whatsNew.summary" = "仅维护更新：Dragon Sample App 现在基于 DragonKit 4.1.0 构建。";
+"app.whatsNew.changed1" = "将 DragonKit 的最低版本要求提升到 4.1.0，即当前已发布的标签。";
 "app.uninstall.item.app" = "应用及其登录项";
 "app.uninstall.item.settings" = "所有设置";
 "app.uninstall.item.state" = "已保存的应用状态";
