@@ -9,8 +9,8 @@
 "app.general.playSound" = "Play sound on action";
 "app.general.playSoundHint" = "A sample app-specific setting — included so Backup & Restore has real data to save.";
 "app.general.languageSection" = "Language";
-"app.whatsNew.summary" = "Maintenance only: Dragon Sample App now builds against DragonKit 4.1.0.";
-"app.whatsNew.changed1" = "Raised the DragonKit requirement to 4.1.0, the current released tag.";
+"app.whatsNew.summary" = "No change to the app itself — this release verifies the new publishing pipeline.";
+"app.whatsNew.changed1" = "Releases now publish the appcast and Homebrew cask through auto-merged pull requests, so no branch is written to directly.";
 "app.uninstall.item.app" = "The app and its login item";
 "app.uninstall.item.settings" = "All settings";
 "app.uninstall.item.state" = "Saved application state";

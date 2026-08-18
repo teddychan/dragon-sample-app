@@ -9,8 +9,8 @@
 "app.general.playSound" = "동작 시 소리 재생";
 "app.general.playSoundHint" = "앱 고유의 예시 설정으로, 백업 및 복원에 저장할 실제 데이터를 위해 포함되었습니다.";
 "app.general.languageSection" = "언어";
-"app.whatsNew.summary" = "유지 관리 전용: Dragon Sample App이 이제 DragonKit 4.1.0으로 빌드됩니다.";
-"app.whatsNew.changed1" = "DragonKit 최소 요구 버전을 현재 공개된 태그인 4.1.0으로 올렸습니다.";
+"app.whatsNew.summary" = "앱 자체는 변경되지 않았습니다 — 이 릴리스는 새 배포 파이프라인을 검증합니다.";
+"app.whatsNew.changed1" = "릴리스가 이제 appcast와 Homebrew cask를 자동 병합되는 풀 리퀘스트로 배포하므로, 브랜치에 직접 쓰지 않습니다.";
 "app.uninstall.item.app" = "앱 및 로그인 항목";
 "app.uninstall.item.settings" = "모든 설정";
 "app.uninstall.item.state" = "저장된 응용 프로그램 상태";

@@ -9,8 +9,8 @@
 "app.general.playSound" = "Reproducir sonido al actuar";
 "app.general.playSoundHint" = "Un ajuste de ejemplo específico de la app, incluido para que Copia de seguridad tenga datos reales que guardar.";
 "app.general.languageSection" = "Idioma";
-"app.whatsNew.summary" = "Solo mantenimiento: Dragon Sample App ahora se compila con DragonKit 4.1.0.";
-"app.whatsNew.changed1" = "El requisito de DragonKit sube a 4.1.0, la versión publicada actual.";
+"app.whatsNew.summary" = "La app no cambia — esta versión verifica la nueva canalización de publicación.";
+"app.whatsNew.changed1" = "Las versiones ahora publican el appcast y el cask de Homebrew mediante pull requests fusionados automáticamente, sin escribir en ninguna rama directamente.";
 "app.uninstall.item.app" = "La app y su ítem de inicio de sesión";
 "app.uninstall.item.settings" = "Todos los ajustes";
 "app.uninstall.item.state" = "Estado guardado de la aplicación";

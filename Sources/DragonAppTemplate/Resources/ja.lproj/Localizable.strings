@@ -9,8 +9,8 @@
 "app.general.playSound" = "操作時にサウンドを再生";
 "app.general.playSoundHint" = "アプリ独自のサンプル設定です。バックアップと復元に保存する実データを用意するために含まれています。";
 "app.general.languageSection" = "言語";
-"app.whatsNew.summary" = "メンテナンスのみ：Dragon Sample App は DragonKit 4.1.0 でビルドされるようになりました。";
-"app.whatsNew.changed1" = "DragonKit の必要バージョンを、現在の公開タグである 4.1.0 に引き上げました。";
+"app.whatsNew.summary" = "アプリ自体の変更はありません。このリリースは新しい公開パイプラインの検証です。";
+"app.whatsNew.changed1" = "リリースは appcast と Homebrew cask を自動マージされるプルリクエスト経由で公開するようになり、ブランチへ直接書き込むことはなくなりました。";
 "app.uninstall.item.app" = "アプリとそのログイン項目";
 "app.uninstall.item.settings" = "すべての設定";
 "app.uninstall.item.state" = "保存されたアプリケーションの状態";
