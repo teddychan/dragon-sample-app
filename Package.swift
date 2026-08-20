@@ -11,7 +11,7 @@ let package = Package(
         // CONFORMANCE §R10 ("the DragonKit pin is current") — it satisfied the rule by
         // construction and so could never catch a stale kit. Now that release ownership is its
         // own repository, the exemption goes with it: this pin is checked like everyone else's.
-        .package(url: "https://github.com/teddychan/dragon-kit.git", from: "4.1.0"),
+        .package(url: "https://github.com/teddychan/dragon-kit.git", from: "4.1.1"),
     ],
     targets: [
         .executableTarget(
