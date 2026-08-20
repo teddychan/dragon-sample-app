@@ -9,8 +9,9 @@
 "app.general.playSound" = "Émettre un son lors d’une action";
 "app.general.playSoundHint" = "Un réglage d’exemple propre à l’app, inclus pour que Sauvegarde ait de vraies données à enregistrer.";
 "app.general.languageSection" = "Langue";
-"app.whatsNew.summary" = "Aucun changement dans l'app — cette version valide le pipeline de publication complet.";
-"app.whatsNew.changed1" = "Les versions se déroulent désormais entièrement via des pull requests : préparées, fusionnées, étiquetées et publiées sans écrire directement dans une branche.";
+"app.whatsNew.summary" = "Un correctif de sécurité dans Désinstaller, hérité du framework partagé sur lequel repose Dragon Sample App. Son icône dans la barre des menus et ses réglages d’exemple ne changent pas.";
+"app.whatsNew.fixed1" = "Désinstaller s’arrête désormais s’il trouve plus d’une copie de Dragon Sample App sur votre Mac. Mettre à la corbeille la copie que vous utilisez a toujours été sûr, mais vos réglages, l’élément d’ouverture et les fichiers de support sont stockés selon l’identité de l’app plutôt que son emplacement — donc deux copies partagent tout cela, et il n’y a aucun moyen de savoir laquelle est laquelle. Désinstaller une copie superflue pourrait supprimer les réglages de la copie que vous utilisez réellement. Elle s’arrête désormais avant de supprimer quoi que ce soit et indique où se trouvent les copies, afin que vous puissiez mettre à la corbeille celles que vous ne voulez pas et réessayer. Si vous n’avez qu’une seule copie, ce qui est le cas de presque tout le monde, rien ne change.";
+"app.whatsNew.changed1" = "Mise à jour vers DragonKit 4.1.1, le framework partagé derrière Réglages, À propos, Nouveautés et les mises à jour logicielles. Le correctif ci-dessus en provient ; aucun de ces volets ne paraît ni ne se comporte différemment.";
 "app.uninstall.item.app" = "L’app et son élément d’ouverture";
 "app.uninstall.item.settings" = "Tous les réglages";
 "app.uninstall.item.state" = "État enregistré de l’app";
