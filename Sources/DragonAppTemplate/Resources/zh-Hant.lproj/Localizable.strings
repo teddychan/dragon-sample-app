@@ -9,8 +9,9 @@
 "app.general.playSound" = "操作時播放聲音";
 "app.general.playSoundHint" = "一個 App 專屬的範例設定——包含它是為了讓備份與還原有真實資料可儲存。";
 "app.general.languageSection" = "語言";
-"app.whatsNew.summary" = "應用程式本身沒有變更 — 此版本用於驗證完整的發佈路徑。";
-"app.whatsNew.changed1" = "發佈流程現在全部透過拉取請求完成：準備、合併、加上標籤與發佈都不會直接寫入任何分支。";
+"app.whatsNew.summary" = "解除安裝功能的一項安全性修正，繼承自 Dragon Sample App 所依據的共用框架。選單列圖像與範例設定沒有變化。";
+"app.whatsNew.fixed1" = "如果在你的 Mac 上發現不只一個 Dragon Sample App 副本，解除安裝現在會停止執行。將正在執行的副本移到垃圾桶一直都是安全的，但你的設定、登入項目與支援檔案都是依應用程式的身分而非位置儲存——因此兩個副本會共用這些內容，也無法分辨哪個是哪個。解除安裝多餘的副本，可能會刪除你實際在用的那個副本的設定。現在解除安裝會在刪除任何內容之前停止，並列出各個副本所在的位置，方便你把不需要的副本移到垃圾桶後再試一次。如果你只有一個副本（幾乎所有人都是如此），則不會有任何變化。";
+"app.whatsNew.changed1" = "已更新到 DragonKit 4.1.1，這是「設定」「關於」「新功能」與軟體更新背後的共用框架。上面的修正正是來自這次更新；這些面板的外觀與行為都沒有變化。";
 "app.uninstall.item.app" = "App 及其登入項目";
 "app.uninstall.item.settings" = "所有設定";
 "app.uninstall.item.state" = "已儲存的 App 狀態";

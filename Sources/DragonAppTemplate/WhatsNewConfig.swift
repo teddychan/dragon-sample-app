@@ -22,18 +22,21 @@ enum WhatsNewConfig {
     @MainActor
     static var content: WhatsNewContent {
         WhatsNewContent(
-            date: "2026-08-18",
+            date: "2026-08-20",
             summary: L("app.whatsNew.summary"),
             sections: [
-                // 1.4.8 changes nothing in the app: the only commit since 1.4.6 is 1.4.6's own
-                // appcast. It exists to exercise the release path end to end — the appcast and
-                // Homebrew cask now land through auto-merged PRs, `main` is branch-protected in all
-                // nine repos, and no step needs a hand-typed command. 1.4.7 was prepared and never
-                // released, so the number is skipped rather than reused: a version that reached a
-                // branch is cheaper to abandon than to make mean two different trees.
-                //
-                // The notes say precisely that instead of inventing a user-facing change to satisfy
-                // the gate — the gate requires the notes to MOVE, not to be interesting.
+                // 1.4.9 carries one user-facing change, inherited from DragonKit 4.1.1: Uninstall
+                // now refuses to run when it finds more than one copy of the app on the Mac.
+                // Settings, the login item and support files are keyed to the app's identity rather
+                // than its location, so two copies would otherwise share all of them with no way to
+                // tell whose is whose.
+                ChangeSection(kind: .fixed, entries: [
+                    L("app.whatsNew.fixed1"),
+                ]),
+                // Deliberately NOT mentioned above: DragonKit 4.1.1's other fix, a raw developer
+                // error in Settings > Updates. It only ever appeared in local debug builds, so no
+                // released build of Dragon Sample App could reach it — that stays out of this pane,
+                // the same rule that kept it out of every other app's notes for this release.
                 ChangeSection(kind: .changed, entries: [
                     L("app.whatsNew.changed1"),
                 ]),

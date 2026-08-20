@@ -9,8 +9,9 @@
 "app.general.playSound" = "Reproducir sonido al actuar";
 "app.general.playSoundHint" = "Un ajuste de ejemplo específico de la app, incluido para que Copia de seguridad tenga datos reales que guardar.";
 "app.general.languageSection" = "Idioma";
-"app.whatsNew.summary" = "La app no cambia — esta versión ejercita la ruta de publicación completa.";
-"app.whatsNew.changed1" = "Las versiones ahora se completan mediante pull requests: preparadas, fusionadas, etiquetadas y publicadas sin escribir en ninguna rama directamente.";
+"app.whatsNew.summary" = "Una corrección de seguridad en Desinstalar, heredada del framework compartido en el que se basa Dragon Sample App. Su icono en la barra de menús y los ajustes de ejemplo no cambian.";
+"app.whatsNew.fixed1" = "Desinstalar ahora se detiene si encuentra más de una copia de Dragon Sample App en tu Mac. Mover a la Papelera la copia que estás usando siempre fue seguro, pero tus ajustes, el elemento de inicio de sesión y los archivos de soporte se guardan según la identidad de la app y no según su ubicación — así que dos copias comparten todo eso, y no hay forma de saber cuál es cuál. Desinstalar una copia de más podría eliminar los ajustes de la copia que realmente usas. Ahora se detiene antes de eliminar nada y muestra dónde están las copias, para que puedas mover a la Papelera las que no quieras y volver a intentarlo. Si tienes una sola copia, que es casi todo el mundo, nada cambia.";
+"app.whatsNew.changed1" = "Actualizado a DragonKit 4.1.1, el framework compartido detrás de Ajustes, Acerca de, Novedades y las actualizaciones de software. La corrección anterior viene de ahí; ninguno de esos paneles se ve ni se comporta de forma distinta.";
 "app.uninstall.item.app" = "La app y su ítem de inicio de sesión";
 "app.uninstall.item.settings" = "Todos los ajustes";
 "app.uninstall.item.state" = "Estado guardado de la aplicación";
